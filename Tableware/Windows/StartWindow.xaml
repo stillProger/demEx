@@ -1,0 +1,20 @@
+﻿<Window x:Class="Tableware.Windows.StartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tableware.Windows"
+        mc:Ignorable="d"
+        Title="StartWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" Icon="/Resources/logo.png">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Регистрация" Width="100" Height="50" Click="RegistrationBtn_Click"/>
+        <Button Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Авторизация" Width="100" Height="50" Click="AutharizationBtn_Click"/>
+        <Button Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Каталог товаров" Width="100" Height="50" Click="ProductBtn_Click"/>
+    </Grid>
+</Window>
